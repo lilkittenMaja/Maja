@@ -1,2 +1,5 @@
+#Ignore Save File as it is in the Steamcloud anyways
 save.json
+
+#Ignore builtins as they get delivered with the game
 __builtins__.py
