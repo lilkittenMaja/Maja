@@ -1,1 +1,2 @@
-harvest()
+while True:
+    harvest()
