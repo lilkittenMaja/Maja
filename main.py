@@ -1,21 +1,22 @@
-#Simple plant loop
-# while True:
-#     if can_harvest():
-#         harvest()
-#         move(North)
+#Imports
+from functions import *
+from stock import *
 
-#Bush plant
-# while True:
-#     if can_harvest():
-#         harvest()
-#         plant(Entities.Bush)
-#         move(North)
+keep_stock(20000, Entities.Bush)
 
-#Second Carrot try
+clear()
 while True:
     if can_harvest():
-        harvest()
-        till()
-        #trade(Items.Carrot_Seed)
-        plant(Entities.Carrots)
-        move(North)
+        harvest_and_move(North)
+    elif can_harvest() == False:
+        plant(Entities.Bush)
+
+#Second Carrot try
+# while True:
+#     trade(Items.Carrot_Seed)
+#     plant(Entities.Carrots)
+#     if can_harvest():
+#         harvest()
+#         till()
+#         plant(Entities.Carrots)
+#         move(North)
