@@ -1,8 +1,18 @@
-def harvest_and_move(direction):
-    if can_harvest():
+def plant_row_grass(length):
+    i = 0
+    while i < length:
+        i = i + 1
         harvest()
-        move(direction)
+        move(North)
 
-def plant_field(item):
-    plant(item)
-    harvest_and_move(North)
+def plant_row_bush(length):
+    i = 0
+    while i < length:
+        i = i + 1
+        plant(Entities.Bush)
+        if can_harvest():
+            harvest()
+            plant(Entities.Bush)
+            move(North)
+        else:
+            move(North)

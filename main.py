@@ -2,14 +2,10 @@
 from functions import *
 from stock import *
 
-keep_stock(20000, Entities.Bush)
-
-clear()
+size = 3
 while True:
-    if can_harvest():
-        harvest_and_move(North)
-    elif can_harvest() == False:
-        plant(Entities.Bush)
+    keep_stock("grass", 20000, 3)
+    keep_stock("bush", 500, 3)
 
 #Second Carrot try
 # while True:
