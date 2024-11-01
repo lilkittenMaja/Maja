@@ -1,5 +1,4 @@
 #Imports
-from functions import *
 from stock import *
 
 #define farm size

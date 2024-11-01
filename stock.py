@@ -1,4 +1,4 @@
-from functions import *
+from planting import *
 
 def keep_stock(item, amount, size):
     if item == "grass":
