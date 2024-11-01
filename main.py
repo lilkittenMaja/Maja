@@ -7,8 +7,7 @@ farmsize = get_world_size()
 #reset everything
 clear()
 
-#global while define stocks
-while True:
-    keep_stock("grass", 25000, farmsize)
-    keep_stock("bush", 500, farmsize)
-    keep_stock("carrot", 200, farmsize)
+#define stocks
+keep_stock("grass", 10000, farmsize)
+keep_stock("bush", 2000, farmsize)
+keep_stock("carrot", 1000, farmsize)
