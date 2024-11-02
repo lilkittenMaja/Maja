@@ -22,3 +22,10 @@ def keep_stock(item, amount, size):
                 i = i + 1
                 plant_row_carrot(size)
                 move(East)
+    elif item == "pumpkin":
+        while num_items(Items.Pumpkin) < amount:
+            i = 0
+            while i < size:
+                i = i + 1
+                plant_row_pumpkin(size)
+                move(East)
