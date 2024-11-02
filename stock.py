@@ -18,6 +18,8 @@ def keep_stock(item, amount, size):
     elif item == "carrot":
         while num_items(Items.Carrot) < amount:
             i = 0
+            if get_entity_type() != Grounds.Soil:
+                till_farm(size)
             while i < size:
                 i = i + 1
                 plant_row_carrot(size)
@@ -25,6 +27,8 @@ def keep_stock(item, amount, size):
     elif item == "pumpkin":
         while num_items(Items.Pumpkin) < amount:
             i = 0
+            if get_entity_type() != Grounds.Soil:
+                till_farm(size)
             while i < size:
                 i = i + 1
                 plant_row_pumpkin(size)

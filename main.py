@@ -1,11 +1,11 @@
 #Imports
 from stock import *
 
-#define farm size
-farmsize = get_world_size()
-
 #reset everything
 clear()
+
+#define variables
+farmsize = get_world_size()
 
 #define stocks
 keep_stock("grass", 10000, farmsize)
@@ -17,9 +17,7 @@ keep_stock("pumpkin", 500, farmsize)
 #TO DO
 #-------------------------------------------------
 
-#Put tilling into it's own function
-#Till the whole field for plants that need it
-#Track if field is tilled or not
+#Redo whole planting and tilling stuff for carrots
 
 #separate Harvesting from planting for pumpkins
 #To replant died pumpkins

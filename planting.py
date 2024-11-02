@@ -1,3 +1,15 @@
+def till_farm(size):
+    i = 0
+    while i < size: 
+        i = i + 1
+        j = 0
+        while j < size:
+            j = j + 1
+            till()
+            move(North)
+        move(East)
+
+
 def plant_row_grass(length):
     i = 0
     while i < length:
@@ -25,11 +37,8 @@ def plant_row_carrot(length):
             trade(Items.Carrot_Seed)
         if can_harvest():
             harvest()
-            till()
-            plant(Entities.Carrots)
-            move(North)
-        else:
-            move(North)
+        plant(Entities.Carrots)
+        move(North)
 
 def plant_row_pumpkin(length):
     i = 0
@@ -39,7 +48,6 @@ def plant_row_pumpkin(length):
             trade(Items.Pumpkin_Seed)
         if can_harvest():
             harvest()
-            till()
             plant(Entities.Pumpkin)
             move(North)
         else:
